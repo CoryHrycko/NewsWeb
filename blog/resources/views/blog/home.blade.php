@@ -5,26 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href ="{{asset('css/app.css')}}">
+        <!-- Scripts -->
+        <script src="{{ asset('js/app.js') }}" defer></script>
 
 </head>
 <body>
-
-    <div class="container">
-        <h1>Welcome to the Newsite</h1>
-        {{-- Menu for News org --}}
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-              <ul class="nav navbar-nav">
-                <li style="font-weight:bold;"><a href=""> Top ten most recent posts!</a></li>
-                <li><a href="">Top ten liked posts</a></li>
-                <li><a href="">Top ten most commented posts</a></li>
-                <li><a href="">Top ten most visited po`sts</a></li>
-            </ul>              
-            </div>
-
-        </nav>
-    </div>
+    {{-- Nav include element --}}
+        @include('inc.nav')
 
 {{-- Container for top ten posts --}}
 
@@ -132,7 +121,5 @@
     </div>
 </div>
 
-
-<script src="{{asset('js/app.js')}}">
 </body>
 </html>
