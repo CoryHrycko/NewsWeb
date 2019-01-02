@@ -11,7 +11,14 @@
 
     <div class="container">
         <h1>Welcome to the Newsite</h1>
-        <nav></nav>
+        <nav>
+            <ul>
+                <li style="font-weight:bold;"> Top ten most recent posts!</li>
+                <li>Top ten liked posts</li>
+                <li>Top ten most commented posts</li>
+                <li>Top ten most visited posts</li>
+            </ul>
+        </nav>
     </div>
 
 
