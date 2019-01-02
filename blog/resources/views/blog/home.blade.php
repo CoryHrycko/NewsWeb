@@ -6,19 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href ="{{asset('css/app.css')}}">
+
 </head>
 <body>
 
     <div class="container">
         <h1>Welcome to the Newsite</h1>
         {{-- Menu for News org --}}
-        <nav>
-            <ul>
-                <li style="font-weight:bold;"> Top ten most recent posts!</li>
-                <li>Top ten liked posts</li>
-                <li>Top ten most commented posts</li>
-                <li>Top ten most visited po`sts</li>
-            </ul>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <ul class="nav navbar-nav">
+                <li style="font-weight:bold;"><a href=""> Top ten most recent posts!</a></li>
+                <li><a href="">Top ten liked posts</a></li>
+                <li><a href="">Top ten most commented posts</a></li>
+                <li><a href="">Top ten most visited po`sts</a></li>
+            </ul>              
+            </div>
+
         </nav>
     </div>
 
@@ -27,7 +31,7 @@
 <div class="container">
     <h2>Top Ten most recent posts!</h2>
     <div class="well well-lg">
-    <h3>Blog post Title</h3>
+    <h3>News post Title</h3>
     <p>farm-to-table organic Odd Future tofu banjo put a bird on it slow-carb normcore selvage 8-bit skateboard flexitarian actually mlkshk craft beer Pinterest pickled fanny pack cliche 3 wolf moon lo-fi before they sold out Truffaut 
         irony dreamcatcher twee Godard forage swag 90's mumblecore Tumblr Helvetica paleo next level locavore cornhole kitsch wayfarers DIY yr cred bitters beard tattooed gastropub Brooklyn crucifix fingerstache wolf chambray shabby 
         chic selfies occupy Wes Anderson viral PBR&B literally YOLO art party jean shorts VHS Thundercats church-key Blue Bottle Marfa stumptown fap biodiesel narwhal Portland leggings Intelligentsia photo booth XOXO meh mixtape flannel 
@@ -37,7 +41,7 @@
         iPhone artisan gentrify Austin heirloom authentic Etsy salvia disrupt bespoke kale chips fixie hashtag umami Carles tousled Schlitz polaroid Vice Shoreditch deep v tote bag cray Tonx chillwave food truck ethical</p>
     </div>
     <div class="well well-lg">
-    <h3>Blog post Title</h3>
+    <h3>News post Title</h3>
     <p>farm-to-table organic Odd Future tofu banjo put a bird on it slow-carb normcore selvage 8-bit skateboard flexitarian actually mlkshk craft beer Pinterest pickled fanny pack cliche 3 wolf moon lo-fi before they sold out Truffaut 
         irony dreamcatcher twee Godard forage swag 90's mumblecore Tumblr Helvetica paleo next level locavore cornhole kitsch wayfarers DIY yr cred bitters beard tattooed gastropub Brooklyn crucifix fingerstache wolf chambray shabby 
         chic selfies occupy Wes Anderson viral PBR&B literally YOLO art party jean shorts VHS Thundercats church-key Blue Bottle Marfa stumptown fap biodiesel narwhal Portland leggings Intelligentsia photo booth XOXO meh mixtape flannel 
@@ -47,7 +51,7 @@
         iPhone artisan gentrify Austin heirloom authentic Etsy salvia disrupt bespoke kale chips fixie hashtag umami Carles tousled Schlitz polaroid Vice Shoreditch deep v tote bag cray Tonx chillwave food truck ethical</p>
     </div>
     <div class="well well-lg">
-    <h3>Blog post Title</h3>
+    <h3>News post Title</h3>
     <p>farm-to-table organic Odd Future tofu banjo put a bird on it slow-carb normcore selvage 8-bit skateboard flexitarian actually mlkshk craft beer Pinterest pickled fanny pack cliche 3 wolf moon lo-fi before they sold out Truffaut 
         irony dreamcatcher twee Godard forage swag 90's mumblecore Tumblr Helvetica paleo next level locavore cornhole kitsch wayfarers DIY yr cred bitters beard tattooed gastropub Brooklyn crucifix fingerstache wolf chambray shabby 
         chic selfies occupy Wes Anderson viral PBR&B literally YOLO art party jean shorts VHS Thundercats church-key Blue Bottle Marfa stumptown fap biodiesel narwhal Portland leggings Intelligentsia photo booth XOXO meh mixtape flannel 
@@ -57,7 +61,7 @@
         iPhone artisan gentrify Austin heirloom authentic Etsy salvia disrupt bespoke kale chips fixie hashtag umami Carles tousled Schlitz polaroid Vice Shoreditch deep v tote bag cray Tonx chillwave food truck ethical</p>
     </div>
     <div class="well well-lg">
-    <h3>Blog post Title</h3>
+    <h3>News post Title</h3>
     <p>farm-to-table organic Odd Future tofu banjo put a bird on it slow-carb normcore selvage 8-bit skateboard flexitarian actually mlkshk craft beer Pinterest pickled fanny pack cliche 3 wolf moon lo-fi before they sold out Truffaut 
         irony dreamcatcher twee Godard forage swag 90's mumblecore Tumblr Helvetica paleo next level locavore cornhole kitsch wayfarers DIY yr cred bitters beard tattooed gastropub Brooklyn crucifix fingerstache wolf chambray shabby 
         chic selfies occupy Wes Anderson viral PBR&B literally YOLO art party jean shorts VHS Thundercats church-key Blue Bottle Marfa stumptown fap biodiesel narwhal Portland leggings Intelligentsia photo booth XOXO meh mixtape flannel 
@@ -67,7 +71,7 @@
         iPhone artisan gentrify Austin heirloom authentic Etsy salvia disrupt bespoke kale chips fixie hashtag umami Carles tousled Schlitz polaroid Vice Shoreditch deep v tote bag cray Tonx chillwave food truck ethical</p>
     </div>
     <div class="well well-lg">
-    <h3>Blog post Title</h3>
+    <h3>News post Title</h3>
     <p>farm-to-table organic Odd Future tofu banjo put a bird on it slow-carb normcore selvage 8-bit skateboard flexitarian actually mlkshk craft beer Pinterest pickled fanny pack cliche 3 wolf moon lo-fi before they sold out Truffaut 
         irony dreamcatcher twee Godard forage swag 90's mumblecore Tumblr Helvetica paleo next level locavore cornhole kitsch wayfarers DIY yr cred bitters beard tattooed gastropub Brooklyn crucifix fingerstache wolf chambray shabby 
         chic selfies occupy Wes Anderson viral PBR&B literally YOLO art party jean shorts VHS Thundercats church-key Blue Bottle Marfa stumptown fap biodiesel narwhal Portland leggings Intelligentsia photo booth XOXO meh mixtape flannel 
@@ -77,7 +81,7 @@
         iPhone artisan gentrify Austin heirloom authentic Etsy salvia disrupt bespoke kale chips fixie hashtag umami Carles tousled Schlitz polaroid Vice Shoreditch deep v tote bag cray Tonx chillwave food truck ethical</p>
     </div>
     <div class="well well-lg">
-    <h3>Blog post Title</h3>
+    <h3>News post Title</h3>
     <p>farm-to-table organic Odd Future tofu banjo put a bird on it slow-carb normcore selvage 8-bit skateboard flexitarian actually mlkshk craft beer Pinterest pickled fanny pack cliche 3 wolf moon lo-fi before they sold out Truffaut 
         irony dreamcatcher twee Godard forage swag 90's mumblecore Tumblr Helvetica paleo next level locavore cornhole kitsch wayfarers DIY yr cred bitters beard tattooed gastropub Brooklyn crucifix fingerstache wolf chambray shabby 
         chic selfies occupy Wes Anderson viral PBR&B literally YOLO art party jean shorts VHS Thundercats church-key Blue Bottle Marfa stumptown fap biodiesel narwhal Portland leggings Intelligentsia photo booth XOXO meh mixtape flannel 
@@ -87,7 +91,7 @@
         iPhone artisan gentrify Austin heirloom authentic Etsy salvia disrupt bespoke kale chips fixie hashtag umami Carles tousled Schlitz polaroid Vice Shoreditch deep v tote bag cray Tonx chillwave food truck ethical</p>
     </div>
     <div class="well well-lg">
-    <h3>Blog post Title</h3>
+    <h3>News post Title</h3>
     <p>farm-to-table organic Odd Future tofu banjo put a bird on it slow-carb normcore selvage 8-bit skateboard flexitarian actually mlkshk craft beer Pinterest pickled fanny pack cliche 3 wolf moon lo-fi before they sold out Truffaut 
         irony dreamcatcher twee Godard forage swag 90's mumblecore Tumblr Helvetica paleo next level locavore cornhole kitsch wayfarers DIY yr cred bitters beard tattooed gastropub Brooklyn crucifix fingerstache wolf chambray shabby 
         chic selfies occupy Wes Anderson viral PBR&B literally YOLO art party jean shorts VHS Thundercats church-key Blue Bottle Marfa stumptown fap biodiesel narwhal Portland leggings Intelligentsia photo booth XOXO meh mixtape flannel 
@@ -97,7 +101,7 @@
         iPhone artisan gentrify Austin heirloom authentic Etsy salvia disrupt bespoke kale chips fixie hashtag umami Carles tousled Schlitz polaroid Vice Shoreditch deep v tote bag cray Tonx chillwave food truck ethical</p>
     </div>
     <div class="well well-lg">
-    <h3>Blog post Title</h3>
+    <h3>News post Title</h3>
     <p>farm-to-table organic Odd Future tofu banjo put a bird on it slow-carb normcore selvage 8-bit skateboard flexitarian actually mlkshk craft beer Pinterest pickled fanny pack cliche 3 wolf moon lo-fi before they sold out Truffaut 
         irony dreamcatcher twee Godard forage swag 90's mumblecore Tumblr Helvetica paleo next level locavore cornhole kitsch wayfarers DIY yr cred bitters beard tattooed gastropub Brooklyn crucifix fingerstache wolf chambray shabby 
         chic selfies occupy Wes Anderson viral PBR&B literally YOLO art party jean shorts VHS Thundercats church-key Blue Bottle Marfa stumptown fap biodiesel narwhal Portland leggings Intelligentsia photo booth XOXO meh mixtape flannel 
@@ -107,7 +111,7 @@
         iPhone artisan gentrify Austin heirloom authentic Etsy salvia disrupt bespoke kale chips fixie hashtag umami Carles tousled Schlitz polaroid Vice Shoreditch deep v tote bag cray Tonx chillwave food truck ethical</p>
     </div>
     <div class="well well-lg">
-    <h3>Blog post Title</h3>
+    <h3>NEws post Title</h3>
     <p>farm-to-table organic Odd Future tofu banjo put a bird on it slow-carb normcore selvage 8-bit skateboard flexitarian actually mlkshk craft beer Pinterest pickled fanny pack cliche 3 wolf moon lo-fi before they sold out Truffaut 
         irony dreamcatcher twee Godard forage swag 90's mumblecore Tumblr Helvetica paleo next level locavore cornhole kitsch wayfarers DIY yr cred bitters beard tattooed gastropub Brooklyn crucifix fingerstache wolf chambray shabby 
         chic selfies occupy Wes Anderson viral PBR&B literally YOLO art party jean shorts VHS Thundercats church-key Blue Bottle Marfa stumptown fap biodiesel narwhal Portland leggings Intelligentsia photo booth XOXO meh mixtape flannel 
@@ -117,7 +121,7 @@
         iPhone artisan gentrify Austin heirloom authentic Etsy salvia disrupt bespoke kale chips fixie hashtag umami Carles tousled Schlitz polaroid Vice Shoreditch deep v tote bag cray Tonx chillwave food truck ethical</p>
     </div>
     <div class="well well-lg">
-    <h3>Blog post Title</h3>
+    <h3>News post Title</h3>
     <p>farm-to-table organic Odd Future tofu banjo put a bird on it slow-carb normcore selvage 8-bit skateboard flexitarian actually mlkshk craft beer Pinterest pickled fanny pack cliche 3 wolf moon lo-fi before they sold out Truffaut 
         irony dreamcatcher twee Godard forage swag 90's mumblecore Tumblr Helvetica paleo next level locavore cornhole kitsch wayfarers DIY yr cred bitters beard tattooed gastropub Brooklyn crucifix fingerstache wolf chambray shabby 
         chic selfies occupy Wes Anderson viral PBR&B literally YOLO art party jean shorts VHS Thundercats church-key Blue Bottle Marfa stumptown fap biodiesel narwhal Portland leggings Intelligentsia photo booth XOXO meh mixtape flannel 
