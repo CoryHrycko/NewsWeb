@@ -18,5 +18,5 @@ Route::get('/', function () {
 });*/
 
 Route::get('/', function () {
-    return view('blog/home.blade.php');
+    return view('blog/home');
 });
