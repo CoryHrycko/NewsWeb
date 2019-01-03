@@ -1,10 +1,10 @@
 @extends('layouts.template')
-
+@include('inc.nav')
 @section('title', 'News Admin Panel')
 
 @section('content')
    <h1>Admin Panel</h1>
-   {{-- <a href="{{route('blogs.create')}}" class="btn btn-primary pull-right">Add New news Article</a> --}}
+   <a href="{{route('blog.create')}}" class="btn btn-primary pull-right">Add News Article</a>
    <br>
    <br>
    <br>
