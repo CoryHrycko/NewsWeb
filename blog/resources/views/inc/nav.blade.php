@@ -9,7 +9,7 @@
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item dropdown">
-@include('inc.Auth')
+        @include('inc.Auth')
                   </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Pricing</a>
@@ -27,9 +27,9 @@
           </ul>
 
               @if(Auth::check())
-            <ul>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="{{route('blog.index')}}" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <ul class="nav-item dropdown">
+                <li>
+                <a href="{{ route('blog.index') }}">
                         Manage my NewsPosts
                     </a>
                 </li>
