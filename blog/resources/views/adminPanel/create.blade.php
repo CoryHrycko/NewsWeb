@@ -5,7 +5,8 @@
 @section('content')
     <h1>Add New Article</h1>
     <div class="col-sm-8 col-smoffset-2">
-        <form action="">
+        <form action="{{route('blog.store')}}" method="POST">
+            {{ csrf_field() }}
             <div class="form-group">
                 <label for="title">Title</label>
                 <input name="title" type="text" class="form-control">

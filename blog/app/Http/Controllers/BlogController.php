@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Blog;
 use Illuminate\Http\Request;
+use App\Post;
+use Auth;
 
 class BlogController extends Controller
 {
@@ -35,7 +37,17 @@ class BlogController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $post=new Post;
+        $postTitle= $request->title;
+        $postBody= $request->body;
+        $postUserId=Auth::id();
+
+        $post->user_id =$postUserId;
+        $post->title =$postTitle;
+        $post->body=$postBody;
+
+        $post->save();
+
     }
 
     /**
