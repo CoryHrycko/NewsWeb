@@ -16,7 +16,9 @@ class BlogController extends Controller
      */
     public function index()
     {
-        return view('adminPanel.home');
+        $loggedInUserId =  Auth::id();
+        $posts= Post::all()->where('user_id', $loggedInUserId);
+        return view('adminPanel.home',['posts'=>$posts]);
     }
 
     /**
@@ -37,7 +39,8 @@ class BlogController extends Controller
      */
     public function store(Request $request)
     {
-        $post=new Post;
+        $post = new Post;
+
         $postTitle= $request->title;
         $postBody= $request->body;
         $postUserId=Auth::id();
@@ -47,6 +50,8 @@ class BlogController extends Controller
         $post->body=$postBody;
 
         $post->save();
+
+        return redirect()->route('blog.index');
 
     }
 
