@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Symfony\Component\HttpKernel\Fragment\RoutableFragmentRenderer;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,9 +18,11 @@ Route::get('/', function () {
     return view('welcome');
 });*/
 
-Route::get('/', function () {
-    return view('blog/home');
-});
+// Route::get('/', function () {
+//     return view('blog/home');
+// });
+
+Route::get('/', 'BlogController@publicHomePage' );
 
 Auth::routes();
 
@@ -27,3 +30,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 Route::resource('blog', 'BlogController');
+
+//comments
+
+Route::post('comments/{post_id}', ['uses'=>'CommentsController@stor', 'as' =>'comments.store']);

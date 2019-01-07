@@ -6,6 +6,7 @@ use App\Blog;
 use Illuminate\Http\Request;
 use App\Post;
 use Auth;
+use Illuminate\Queue\RedisQueue; 
 
 class BlogController extends Controller
 {
@@ -20,6 +21,13 @@ class BlogController extends Controller
         $posts= Post::all()->where('user_id', $loggedInUserId);
         return view('adminPanel.home',['posts'=>$posts]);
     }
+
+    public function publicHomePage(){
+        $posts = Post::paginate(10);
+
+        return view('blog.home',['posts'=>$posts]);
+    }
+
 
     /**
      * Show the form for creating a new resource.
@@ -64,6 +72,13 @@ class BlogController extends Controller
     public function show(Blog $blog)
     {
         //
+        $post = Post::find($id);
+        $data = array(
+            'id' => $id,
+            'poost'=>$post
+    );
+
+    Return view('blog.view_post',$data);
     }
 
     /**
@@ -72,9 +87,12 @@ class BlogController extends Controller
      * @param  \App\Blog  $blog
      * @return \Illuminate\Http\Response
      */
-    public function edit(Blog $blog)
+    public function edit($id)
     {
         //
+        $post - Post::find($id);
+
+        return view('adminPanel.edit',['post'=>$post]);
     }
 
     /**
@@ -87,6 +105,21 @@ class BlogController extends Controller
     public function update(Request $request, Blog $blog)
     {
         //
+
+        if (isset($request->title)){
+            $post->title = $request->title;
+        }
+        if (isset($request->body)){
+            $post->body = $request->body;
+        }
+        $post->save();
+        if (isset($request->editForm)){
+            return redirect()->route('blog.index');
+        }else{
+            return redirect()->route('blog.index');
+        }
+
+        // return redirect()->
     }
 
     /**
@@ -98,5 +131,10 @@ class BlogController extends Controller
     public function destroy(Blog $blog)
     {
         //
+        // return 'hello';
+        $post = Post::find($id);
+
+        $post ->delete;
+        return redirect()->route('blog.index');
     }
 }
