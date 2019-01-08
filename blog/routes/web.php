@@ -21,6 +21,7 @@ Route::get('/', function () {
 // Route::get('/', function () {
 //     return view('blog/home');
 // });
+// TODO: MAke these routes work.
 
 Route::get('/', 'BlogController@publicHomePage' );
 
