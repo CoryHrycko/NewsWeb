@@ -23,7 +23,7 @@ Route::get('/', function () {
 // });
 // TODO: MAke these routes work.
 
-Route::get('/', 'BlogController@publicHomePage' );
+Route::get('/', 'BlogController@publicHomePage' ); 
 
 Auth::routes();
 
